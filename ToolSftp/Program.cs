@@ -58,6 +58,8 @@ namespace ToolSftp
             {
                 Console.WriteLine("sftp upload fail: " + ex.Message);
             }
+            sftp.Dispose();
+            sftp = null;
         }
     }
 }
